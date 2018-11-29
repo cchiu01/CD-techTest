@@ -1,5 +1,5 @@
 Accessibility
-- websites are designed for everyone to use
+- design with accessibility first-for a better user experience for all
 - How I build this website with accessibility in mind:
 * headings to organize structure of content
 * descriptive alt text for images
@@ -8,3 +8,6 @@ Accessibility
 * accessible forms with labels
 * keyboard accessibility
 * semantic elements (improve SEO and screen reader comprehension)
+
+Bonus
+- compare feature
