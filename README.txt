@@ -1,6 +1,6 @@
 Accessibility
 - design with accessibility first-for a better user experience for all
-- How I build this website with accessibility in mind:
+- How this website is built with accessibility in mind:
 * headings to organize structure of content
 * descriptive alt text for images
 * descriptive link names
@@ -10,4 +10,6 @@ Accessibility
 * semantic elements (improve SEO and screen reader comprehension)
 
 Bonus
+- french feature 
 - compare feature
+- 
