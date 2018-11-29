@@ -1,0 +1,32 @@
+
+//  MIXINS
+@mixin flex($flexDirection:auto, $justifyContent:auto, $alignItems:auto, $flexWrap:auto) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin position($top, $right, $bottom, $left) {
+    position:absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// COLOURS
+$softBlack: #252934;
+$darkBlack: #1B242F;
+$grey: grey;
+$accent: tomato;
+
+
+// MEDIA QUERIES
+$tablet: 600px;
+$desktop: 800px;
+$large-desktop: 1500px;
+
+// FONTS
+$heading: 'Montserrat', sans-serif;
+$main: 'Open Sans', sans-serif;
