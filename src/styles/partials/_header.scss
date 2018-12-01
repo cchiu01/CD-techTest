@@ -1,0 +1,88 @@
+header {
+    background:  url(../../../public/assets/car-01.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+	padding-top:1px;
+	color: white;
+}
+
+nav {
+	background: $darkBlack;
+	.wrapper {
+		display:flex;
+		justify-content: space-between;
+		align-items:center;
+		ul {
+			display:flex;
+			a {
+			color: $grey;
+			margin: 0 5px;
+            padding: 10px;
+			font-weight: bold;
+			font-size: 1.3rem;
+            }
+		}
+	}
+}
+
+.hero__content {
+	position: absolute;
+	bottom: 30px;
+	left: 10%;
+	ul {
+		padding: 0;
+		display: flex;
+		margin: 10px 0;
+		li {
+			margin-right: 5px;
+		}
+		.fas {
+			position: relative;
+			top: -4px;
+			font-size: 0.5rem;
+		}
+	}
+}
+
+.hamburger,
+.exit-responsive {
+	display: none;
+}
+
+.show.menu {
+	display: block;
+	height: 350px;
+}
+
+//  Media Query for portrait tablet and small desktops
+@media all and (max-width: $tablet) {
+	.hamburger, .exit-responsive {
+		display: block;
+		font-size: 20px;
+	}
+
+	.menu { 
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $darkBlack;
+			ul {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				a {
+					display: block;
+				}
+			}
+	}
+	
+	.hero__content ul {
+		flex-direction: column;
+		.fas {
+			display: none;
+		}
+	}
+}
