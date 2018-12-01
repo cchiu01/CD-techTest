@@ -12,8 +12,8 @@
     <title>Commerce Dynamics</title>
 </head>
 <body>
+    <!-- Header styles begin here -->
     <header class="header">
-        
             <nav>
                 <div class="wrapper">
                     <h2 class="logo">TEST</h2>
@@ -45,11 +45,13 @@
             </ul>
         </div>
     </header>
+    <!-- Header styles end here -->
 
+    <!-- Main form and gallery begins here -->
     <main class="features" id="features">
         <div class="wrapper">
-            <form action="submit">
-                <select name="" id="">
+            <form action="submit" class="dropdown">
+                <select class="rounded">
                     <option value="" disabled selected>Select Your Make</option>
                     <option value="">Audi</option>
                     <option value="">BMW</option>
@@ -57,7 +59,7 @@
                     <option value="">Mercedes</option>
                     <option value="">Toyota</option>
                 </select>
-                <select name="" id="" disabled>
+                <select class="rounded" disabled>
                     <option value="" disabled selected>Select Make First</option>
                     <option value="">lorem</option>
                     <option value="">lorem</option>
@@ -65,7 +67,7 @@
                     <option value="">lorem</option>
                     <option value="">lorem</option>
                 </select>
-                <select name="" id="">
+                <select class="rounded">
                     <option value="" disabled selected>First Registration</option>
                     <option value="">lorem</option>
                     <option value="">lorem</option>
@@ -73,7 +75,7 @@
                     <option value="">lorem</option>
                     <option value="">lorem</option>
                 </select>
-                <select name="" id="">
+                <select class="rounded">
                     <option value="" disabled selected>Max Mileage</option>
                     <option value="">lorem</option>
                     <option value="">lorem</option>
@@ -81,7 +83,7 @@
                     <option value="">lorem</option>
                     <option value="">lorem</option>
                 </select>
-                <select name="" id="">
+                <select class="rounded">
                     <option value="" disabled selected>Max Price</option>
                     <option value="">lorem</option>
                     <option value="">lorem</option>
@@ -89,7 +91,7 @@
                     <option value="">lorem</option>
                     <option value="">lorem</option>
                 </select>
-                <button class="form__button">show results</button>
+                <button class="form__button--caps--rounded">show results</button>
             </form>
             <div class="gallery">
                 <div class="gallery__controls__container">
@@ -102,6 +104,7 @@
                             <option value="Price: High to Low">Price: High to Low</option>
                         </select>
                     </form>
+                </div>
                 <div class="gallery__container">
                     <div class="gallery__card">
                         <figure>
@@ -148,9 +151,11 @@
                         </figure>
                     </div>
                 </div>
-                </div>
+                
             </div>
         </div>
+    </main>
+        <!-- Main form and gallery begins here -->
         <aside class="stats">
 
         </aside>
@@ -158,7 +163,7 @@
 
         </article>
         <footer id="contact"></footer>
-    </main>
+    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>

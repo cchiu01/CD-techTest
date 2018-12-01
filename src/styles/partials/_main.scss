@@ -1,0 +1,40 @@
+.features .dropdown {
+    background-color: $grey;
+    margin: 100px 0 0 0;
+    padding: 3%;
+    @include flex(row,auto,auto,wrap);
+
+    select, button {
+        width: calc(50% - 20px);
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    button {
+        background-color: $accent;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.gallery__controls {
+    &__container {
+        display: flex;
+        justify-content: end;
+    }
+    &--toggle, &--sort {
+        margin: 50px 10px;
+        font-size: 2.0rem;
+    }     
+}
+
+@media all and (max-width: $tablet) {
+    .features .dropdown {
+        @include flex(column, auto, auto, auto);
+        
+        select, button {
+            width: calc(100% - 20px);
+        }
+    }
+    
+}

@@ -4,6 +4,7 @@
     flex-direction: $flexDirection;
     justify-content: $justifyContent;
     align-items: $alignItems;
+    flex-wrap: $flexWrap;
 }
 
 @mixin position($top, $right, $bottom, $left) {
@@ -17,8 +18,8 @@
 // COLOURS
 $softBlack: #252934;
 $darkBlack: #1B242F;
-$grey: whitemsoke;
-$accent: tomato;
+$grey: rgb(211, 211, 211);
+$accent: rgb(230, 17, 37);
 
 
 // MEDIA QUERIES
