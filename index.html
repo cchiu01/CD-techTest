@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css' integrity='sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg'
         crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">    
     <link type='image/png' href='public/assets/favicon.ico' rel='icon'>
     <link rel="stylesheet" href="public/styles/style.css">
     <title>Commerce Dynamics</title>
@@ -109,63 +110,186 @@
                     <div class="gallery__card">
                         <figure>
                             <img src="public/assets/car-02.jpg" alt="">
-                            <p class="price"></p>
+                            <div class="gallery__card__imageDetails">
+                                <p class="price">$22,000</p>
+                                <div class="gallery__card__imageDetails--right"><i class="fas fa-plus"></i><i class="far fa-star"></i></div>
+                            </div>
+                            <p class="sold">Sold</p>
                         </figure>
                         <div class="gallery__content">
-                            <h4></h4>
+                            <h4>Land Rover Range Rover</h4>
                             <ul>
                                 <li><i class="far fa-calendar-alt"></i>01-2015</li>
-                                <li></li>
-                                <li></li>
+                                <li><i class="fas fa-tachometer-alt"></i>30,000 miles</li>
+                                <li><i class="fab fa-pushed"></i>130 kw (275 hp)</li>
                             </ul>
                         </div>
                     </div>
                     <div class="gallery__card">
                         <figure>
-                            <img src="" alt="">
-                            <p class="price"></p>
+                            <img src="public/assets/car-03.jpg" alt="">
+                            <div class="gallery__card__imageDetails">
+                                <p class="price">$22,000</p>
+                                <div class="gallery__card__imageDetails--right"><i class="fas fa-plus"></i><i class="far fa-star"></i></div>
+                            </div>
                         </figure>
+                        <div class="gallery__content">
+                            <h4>Land Rover Range Rover</h4>
+                            <ul>
+                                <li><i class="far fa-calendar-alt"></i>01-2015</li>
+                                <li><i class="fas fa-tachometer-alt"></i>30,000 miles</li>
+                                <li><i class="fab fa-pushed"></i>130 kw (275 hp)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="gallery__card">
                         <figure>
-                            <img src="" alt="">
-                            <p class="price"></p>
+                            <img src="public/assets/car-05.jpg" alt="">
+                            <div class="gallery__card__imageDetails">
+                                <p class="price">$22,000</p>
+                                <div class="gallery__card__imageDetails--right"><i class="fas fa-plus"></i><i class="far fa-star"></i></div>
+                            </div>
+                            <p class="sold">Sold</p>
                         </figure>
+                        <div class="gallery__content">
+                            <h4>Land Rover Range Rover</h4>
+                            <ul>
+                                <li><i class="far fa-calendar-alt"></i>01-2015</li>
+                                <li><i class="fas fa-tachometer-alt"></i>30,000 miles</li>
+                                <li><i class="fab fa-pushed"></i>130 kw (275 hp)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="gallery__card">
                         <figure>
-                            <img src="" alt="">
-                            <p class="price"></p>
+                            <img src="public/assets/car-06.jpg" alt="">
+                            <div class="gallery__card__imageDetails">
+                                <p class="price">$22,000</p>
+                                <div class="gallery__card__imageDetails--right"><i class="fas fa-plus"></i><i class="far fa-star"></i></div>
+                            </div>
                         </figure>
+                        <div class="gallery__content">
+                            <h4>Land Rover Range Rover</h4>
+                            <ul>
+                                <li><i class="far fa-calendar-alt"></i>01-2015</li>
+                                <li><i class="fas fa-tachometer-alt"></i>30,000 miles</li>
+                                <li><i class="fab fa-pushed"></i>130 kw (275 hp)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="gallery__card">
                         <figure>
-                            <img src="" alt="">
-                            <p class="price"></p>
+                            <img src="public/assets/car-07.jpg" alt="">
+                            <div class="gallery__card__imageDetails">
+                                <p class="price">$22,000</p>
+                                <div class="gallery__card__imageDetails--right"><i class="fas fa-plus"></i><i class="far fa-star"></i></div>
+                            </div>
                         </figure>
+                        <div class="gallery__content">
+                            <h4>Land Rover Range Rover</h4>
+                            <ul>
+                                <li><i class="far fa-calendar-alt"></i>01-2015</li>
+                                <li><i class="fas fa-tachometer-alt"></i>30,000 miles</li>
+                                <li><i class="fab fa-pushed"></i>130 kw (275 hp)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="gallery__card">
                         <figure>
-                            <img src="" alt="">
-                            <p class="price"></p>
+                            <img src="public/assets/car-08.jpg" alt="">
+                            <div class="gallery__card__imageDetails">
+                                <p class="price">$22,000</p>
+                                <div class="gallery__card__imageDetails--right"><i class="fas fa-plus"></i><i class="far fa-star"></i></div>
+                            </div>
                         </figure>
+                        <div class="gallery__content">
+                            <h4>Land Rover Range Rover</h4>
+                            <ul>
+                                <li><i class="far fa-calendar-alt"></i>01-2015</li>
+                                <li><i class="fas fa-tachometer-alt"></i>30,000 miles</li>
+                                <li><i class="fab fa-pushed"></i>130 kw (275 hp)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gallery__container__pages"> 
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#"><i class="fas fa-arrow-right"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                
             </div>
         </div>
     </main>
         <!-- Main form and gallery begins here -->
         <aside class="stats">
-
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <p class="stats__number">25</p>
+                        <p>Years In Business</p>
+                    </li>
+                    <li>
+                        <p class="stats__number">1,000+</p>
+                        <p>Cars Sold</p>
+                    </li>
+                    <li>
+                        <p class="stats__number">98%</p>
+                        <p>Customer Satisfaction</p>
+                    </li>
+                    <li>
+                        <p class="stats__number">10,000+</p>
+                        <p>Registered Users</p>
+                    </li>
+                </ul>
+            </div>
         </aside>
         <article class="blog" id="blog">
+            <h3>Latest Car News</h3>
+            <div class="wrapper">
 
+                <div class="blog__card ">
+                    <figure >
+                        <img src="public/assets/car-07.jpg" alt="">
+                    </figure>
+                    <div class="blog__content">
+                        <h3>50 years of pony-car style</h3>
+                        <p class ="hide"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repudiandae soluta porro! Sit quod
+                            blanditiis suscipit rem molestiae molestias rerum!</p>
+                        <p class="hide">
+                            <img class="blog__author" src="public/assets/image-01.jpeg" alt="picture of author">
+                            by John Doe
+                        </p>
+                        <a href="#" class="show">Read more</a>
+                    </div>
+                </div>
+                <div class="blog__card">
+                    <figure>
+                        <img src="public/assets/car-07.jpg" alt="">
+                    </figure>
+                    <div class="blog__content">
+                        <h3>50 years of pony-car style</h3>
+                        <p class="hide"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repudiandae soluta
+                            porro! Sit quod
+                            blanditiis suscipit rem molestiae molestias rerum!</p>
+                        <p class="hide">
+                            <img class="blog__author" src="public/assets/image-01.jpeg" alt="picture of author">
+                            by John Doe
+                        </p>
+                        <a href="#" class="show">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__submit--caps">
+                <a href="#" >submit your vehicle  <i class="fas fa-arrow-right"></i></a> 
+            </div>
         </article>
         <footer id="contact"></footer>
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
         $(function () {
                 $('.hamburger').on('click', function () {
@@ -175,6 +299,7 @@
                 $('.exit-responsive').on('click', function () {
                     $('.menu').removeClass('show')
                 })
+                
             });
     </script>
 </body>

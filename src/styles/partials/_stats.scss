@@ -1,0 +1,27 @@
+.stats {
+    background: lightgrey;
+    margin: 50px 0;
+    padding: 30px 0;
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    p {
+        text-align: center;
+    }
+    &__number {
+        font-size: 3.0rem;
+        font-weight: bold;
+    }
+}
+
+@media all and (max-width: $tablet) {
+    .stats {
+        ul {
+        @include flex(row,auto,auto,wrap);
+        }
+        li {
+            width: 50%;
+        }
+    }
+}

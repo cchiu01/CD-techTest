@@ -17,15 +17,102 @@
     }
 }
 
+.gallery__container {
+    @include flex(row,auto,auto,wrap);
+    &__pages {
+        clear:both;
+        text-align: center;
+        width: 100%;
+        ul {
+            @include flex(row,center,auto,auto);
+        }
+        a {
+            padding: 20%;
+            border: solid grey 1px;
+            background: lightgrey;
+            margin: 15px;
+            &:hover {
+					background:rgb(175, 181, 194);
+				}
+        }
+    }
+}
+
 .gallery__controls {
     &__container {
-        display: flex;
-        justify-content: end;
+        @include flex(row, end, center, auto);
+        .fas {
+            padding: 10px;
+            background: lightgrey;
+            border: solid grey 1px;
+        }
     }
     &--toggle, &--sort {
         margin: 50px 10px;
         font-size: 2.0rem;
-    }     
+    }       
+}
+
+
+.gallery__card {
+    margin: 20px;
+    width: calc(33% - 40px);
+    figure {
+        overflow: hidden;
+        position: relative;
+    }
+    img {
+        height: 250px;
+    }
+    &__imageDetails {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: -10px;
+        &--right {
+            display: flex;
+            position: relative;
+            left: -10%;
+        }
+        .fas, .far {
+            margin: 0 10px;
+            background: #fff6;
+            padding: 10%;
+        }
+    }
+    .sold {
+        position: absolute;
+        top: 10px;
+        background: $accent;
+        transform: rotate(-45deg);
+        padding: 10px 180px;
+        display: block;
+        left: -149px;
+        color: white;
+    }
+    .price {        
+        font-size: 2.0rem;
+        position: relative;
+        left: 5%;
+
+    }
+}
+
+.gallery__content {
+    padding: 0 20px;
+    border: 1px solid lightgrey;
+    h4 {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    li {
+        margin: 10px 0;
+    }
+    i {
+        margin-right: 10px;
+    }
 }
 
 @media all and (max-width: $tablet) {
@@ -34,6 +121,15 @@
         
         select, button {
             width: calc(100% - 20px);
+        }
+    }
+
+    .gallery__container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        .gallery__card {
+            width: calc(100% - 40px);
         }
     }
     
